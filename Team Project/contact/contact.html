@@ -8,6 +8,7 @@
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/form.css">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,7 +18,7 @@
     <![endif]-->
 </head>
 <body>
-<nav>
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container"> 
     
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -28,8 +29,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="basket.html">Basket<span class="sr-only">(current)</span></a> </li>
-        <li><a href="../contact/contact.html">Contact</a> </li>
+        <li class="active"><a href="../basket/basket.html">Basket<span class="sr-only">(current)</span></a> </li>
+        <li><a href="contact.html">Contact</a> </li>
         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Products <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="../samsung/samsung.html">Samsung</a> </li>
@@ -107,35 +108,38 @@
   </div>
 </div>
 <hr>
-<h2 class="text-center">RECOMMENDED PRODUCTS</h2>
+<h2 class="text-center">CONTACT US</h2>
 <hr>
 <div class="container">
   <div class="row text-center">
-    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
-      <div class="thumbnail"> <img src="../images/lg40.jpg" alt="Thumbnail Image 1" class="img-responsive">
+<div class="col-sm-4col-lg-4 col-xs-6">
+      <div class="thumbnail"> <img src="../images/woolwich map.jpg" alt="Thumbnail Image 1" class="img-responsive">
         <div class="caption">
-          <h3>LG 40'</h3>
-          <p>£370.00 </p>
-          <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</a></p>
-        </div>
+          <h3>For our Collect+ customers:</h3>
+          <p>Please pick up order from 8 Woolwich New Road, SE18 6GH, London</p>
+</div>
       </div>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
-      <div class="thumbnail"> <img src="../images/sony55.jpg" alt="Thumbnail Image 1" class="img-responsive">
-        <div class="caption">
-          <h3>Sony 55'</h3>
-          <p>£1,149.00</p>
-          <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</a> </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
-      <div class="thumbnail"> <img src="../images/panasonic50.jpg" alt="Thumbnail Image 1" class="img-responsive">
-        <div class="caption">
-          <h3>Panasonic 50'</h3>
-          <p>£899.00</p>
-          <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</a> </p>
-        </div>
+</div>
+    <div class="col-sm-4col-lg-4 col-xs-6">
+      <div class="thumbnail">
+<div class="caption">
+  <h3>Visitor's Form</h3>
+  <p>Drop us a line:</p>
+  <!-- Start Here: Web Form tutorial -->
+<form class="subscribeForm" name="Subscription Form" method="post" action="../contact/sent.html" enctype="text/plain">
+
+	<input id="fname" type="text" placeholder="First Name*" Name="First Name" required>
+	<input id="lname" type="text" placeholder="Last Name*" name="Last Name" required>
+<!-- Step 1: Add an email field here -->
+	<input id="email" type="email" placeholder="Email" name="Email" required>
+<!-- Step 2: Add an address field here -->
+	<input id="address" type="text" placeholder="Address (optional)" name="Address">
+<!-- Step 3: add a submit button here -->
+	<input id="submit" type="submit" value="Send">
+      	
+</form>
+
+</div>
       </div>
     </div>
     <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 hidden-lg hidden-md hidden-sm">
@@ -148,36 +152,14 @@
       </div>
     </div>
   </div>
-  <div class="row text-center hidden-xs">
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-      <div class="thumbnail"> <img src="../images/sony32.jpg" alt="Thumbnail Image 1" class="img-responsive">
-        <div class="caption">
-          <h3>Sony 32'</h3>
-          <p>£369.99</p>
-          <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</a> </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-      <div class="thumbnail"> <img src="../images/panasonic49.jpg" alt="Thumbnail Image 1" class="img-responsive">
-        <div class="caption">
-          <h3>Panasonic 49'</h3>
-          <p>£379.00</p>
-          <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</a> </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-      <div class="thumbnail"> <img src="../images/SAMSUNG 50'.jpg" alt="Thumbnail Image 1" class="img-responsive">
-        <div class="caption">
-          <h3>Samsung 50'</h3>
-          <p>£1,299.00</p>
-          <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart</a> </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <nav class="text-center">
+  <div class="row text-center hidden-xs"> 
+  <p> <div class="row text-center"> 
+<div class="col-sm-4col-lg-4 col-xs-6"></p>
+  <p> .........</p>
+</div><p> ........
+</p>
+  <p> <div class="row text-center">
+<div class="col-sm-4col-lg-4 col-xs-6"></p></div><nav class="text-center">
     <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
     <ul class="pagination">
     </ul>
