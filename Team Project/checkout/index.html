@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Loyalty Scheme| ZAP Online Services </title>
+<title>Contact Us | ZAP Online Services </title>
 <link rel="stylesheet" href="../css/foundation.min.css">
 <link rel="stylesheet" href="../css/bootstrap.css">
 <style>
@@ -29,7 +29,7 @@
 <div id="responsive-menu">
 <div class="top-bar-left">
 <ul class="dropdown menu" data-dropdown-menu>
-<li class="menu-text">ZAP Online Services</li>
+<li class="menu-text">ZAP Online Services </li>
 <li><a href="../index.html">Home</a></li>
 <li>
 <a href="#">Products</a>
@@ -41,7 +41,7 @@
 </ul>
 </li>
 <li><a href="../loyalty/index.html">Loyalty Scheme</a></li>
-<li><a href="index.html">Contact</a></li>
+<li><a href="../contact/index.html">Contact</a></li>
 </ul>
 </div>
 <div class="top-bar-right">
@@ -56,43 +56,142 @@
 <!-- End Top Bar -->
 
     <br>
- <div class="row">
-<div class="small-12 large-centered columns">
-  <h2 class="text-center">&nbsp;</h2>
-</div>
-<hr>
-</div>
+    <!-- You can now combine a row and column if you just need a 12 column row -->
+   
 
-<br>
 <div class="row">
-<div class="small-12 large-4 medium-4 columns"> </div>
-<div class="small-12 medium-8 large-8 columns">
-  <h4> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Message Sent</h4>
-  <p>&nbsp;</p>
-  <p>We will get back to you as soon as possible&nbsp;</p>
-</div>
-</div>
-<br>
+<div class="small-12 large-6 medium-6 columns">
+<span class="label label-info">Note</span>
+<p class="help-block"> * Customers do not have to be logged in or create an account to purchase.</p>
+
+
+
+<fieldset id="billing_details">
+<legend>Billing Details</legend>
+
 <div class="row">
-<div class="small-12 large-4 medium-4 columns"> </div>
-<div class="small-12 medium-8 large-8 columns">
-  <h4>&nbsp;</h4>
-  <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Thank You</p>
+<div class="large-6 columns">
+
+<label for="billing_first_name">First Name</label>
+
+<input type="text" name="billing_first_name" value="">
+</div>
+
+<div class="large-6 columns">
+<label for="billing_last_name">Last Name</label>
+<input type="text" name="billing_last_name" value="" />
+
+</div>
+
+</div>
+			
+
+
+<div class="row">
+<div class="large-6 columns">
+<label for="billing_address1">Street Address</label>
+<input type="text" name="billing_address1" value="" />
+
+</div>
+
+<div class="large-6 columns">
+<label for="billing_city">City</label>
+<input type="text" name="billing_city" value="" />
+
+</div>
+
+</div>
+
+
+
+<div class="row">
+<div class="large-12 columns ">
+<div class="control-group ">
+<label class="control-label" for="billing_state">State</label>
+<div class="controls">
+<select name="billing_state">
+ 
+
+ <option value='Credit Card' >Credit Credit</option>
+<option value='Paypal' >Paypal</option>
+
+
+</select>
+</div>
+</div>
 </div>
 </div>
 
-<hr>
-<div class="row column text-center">
-  <h3>&nbsp;</h3>
-  <hr>
-</div>
-    <div class="column row">
+<div class="row">
+<div class="large-6 columns">
+<label for="billing_phone">Phone Number</label>
+<input type="text" name="billing_phone" value="" />
 
-          <div class="row medium-up-3 large-up-5">
-<div class="column"> </div>
-<div class="column"> </div>
-          </div>
-        </div>
+</div>
+
+<div class="large-6 columns">
+<label for="order_email">Email</label>
+<input type="text" id="order_email" name="order_email" value="" />
+
+</div>
+
+</div>
+
+
+
+</fieldset>
+
+
+</div>
+<div class="small-12 large-6 medium-6 columns">
+
+<input class="button success expanded float-right" type="submit" onclick="window.location.href='https://www.paypal.com/signin?country.x=GB&locale.x=en_GB'" id="submitButton" value="Use Paypal Account">
+<p class="secondary text-center">OR </p>
+<p class="secondary text-center">Enter Card Details</p>
+
+
+<div class="reveal" id="formModal" data-reveal>
+<div class="success callout" data-closable>
+<p><i class="fa fa-envelope"></i> Mail Sent<br>
+<h5>Thank you for contacting us through our website. We will reply to your question or request as soon as possible.</h5>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+</div>
+
+<div class="contact-form">
+<form class="validate" action="#" accept-charset="utf-8" method="post">
+<fieldset>
+<label for="first_name">Card Number
+<input type="text" placeholder="16 Digit Card Number here" name="Card Number" id="Card Number" required>
+
+</label>
+<label for="Expiry Date on Card">Expiry Date
+<input type="email" placeholder="Expiry Date of Card" name="Expiry Date" required>
+
+</label>
+<label>CVV*
+<input type="char" placeholder="3-Digit Code" name="subject" id="CVV" required>
+
+</label>
+     
+
+
+
+
+</label>
+<input class="button success expanded float-right" type="submit" id="submitButton" onclick="window.location.href='paid.html'" value="PAY">
+</fieldset></form>
+</div>
+
+
+</div>
+
+
+
+</div>
+
   
     
     
@@ -188,11 +287,12 @@
 
   });
   </script>
+  
 <script>
+	$('.validate').attr('data-abide', '');
  $(document).foundation();
 </script>
-</body>
-</html>
-
 
     
+</body>
+</html>
